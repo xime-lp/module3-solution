@@ -1,4 +1,15 @@
 body {
 	text-align: center;
 	font-family: 'Pangolin', cursive;
+	background-color: #009699;
+}
+#header-nav {
+	background-color: #009699;
+	border-radius: 0;
+	border: 0;
+	text-align: center;
+}
+h1 {
+	color: #ff7c4d;
+	text-shadow: 3px 3px 3px 3px #000;
 }

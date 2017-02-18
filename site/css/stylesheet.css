@@ -1,8 +1,14 @@
+/*General styles for the whole page*/
+* {
+	box-sizing: border-box;
+}
 body {
-	text-align: center;
 	font-family: 'Pangolin', cursive;
 	background-color: white;
 }
+
+/**content background-color: #01e4e1;**/
+/*HEADER AND NAVBAR STYLES*/
 #header-nav {
 	background-color: #0991c3;
 	border-radius: 0;
@@ -10,9 +16,10 @@ body {
 	text-align: center;
 	border-bottom: 1px solid black;
 }
+/*Brand*/
 .navbar-brand {
 	height: 85px;
-	padding: 0;
+	padding: 20px;
 }
 .navbar-brand h1 {
 	font-family: 'Acme', sans-serif;
@@ -20,9 +27,69 @@ body {
 	font-size: 3em;
 	text-shadow: .5px .5px .5px #777;
 	margin-bottom: 0px;
-	margin-top: 20px;
+	margin-top: 0px;
 	line-height: .75;
 }
 .navbar-brand a:link, .navbar-brand a:visited {
 	text-decoration: none;
+}
+/*Butoons*/
+#nav-list {
+	margin-top:15px;
+}
+#nav-list a {
+	color: #ffad15;
+	font-size: 1.7em;
+}
+#nav-list a:hover {
+	background: #f2f2f2;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #ffad15;
+}
+
+/*CONTENT*/
+.food-title {
+	width: 100%;
+	height: 25px;
+	margin-bottom: 10px;
+	position: relative;
+	border: 1px solid black;
+	overflow: hidden;
+	box-shadow: 1px 1px 1px 1px #e6e6e6;
+}
+.food-title span {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/**LARGE DEVICES STYLES**/
+@media (min-width: 1200px){
+
+}
+
+/**MEDIUM DEVICES STYLES**/
+@media (min-width: 99px) and (max-width: 1199px){
+
+}
+
+/**SMALL DEVICES STYLES**/
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/*EXTRA SMALL DEVICES STYLES*/
+@media (max-width: 767px){
+	.navbar-brand {
+		padding-top: 15px;
+		height: 75px;
+	}
+	.navbar-brand h1 {
+		font-size: 9vw;
+	}
+	#collapsable-nav a {
+		font-size: 2em;
+	}
 }

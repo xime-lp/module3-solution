@@ -1,15 +1,28 @@
 body {
 	text-align: center;
 	font-family: 'Pangolin', cursive;
-	background-color: #009699;
+	background-color: white;
 }
 #header-nav {
-	background-color: #009699;
+	background-color: #0991c3;
 	border-radius: 0;
 	border: 0;
 	text-align: center;
+	border-bottom: 1px solid black;
 }
-h1 {
-	color: #ff7c4d;
-	text-shadow: 3px 3px 3px 3px #000;
+.navbar-brand {
+	height: 85px;
+	padding: 0;
+}
+.navbar-brand h1 {
+	font-family: 'Acme', sans-serif;
+	color: #ffad15; /**#fa8005**/
+	font-size: 3em;
+	text-shadow: .5px .5px .5px #777;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	line-height: .75;
+}
+.navbar-brand a:link, .navbar-brand a:visited {
+	text-decoration: none;
 }
